@@ -33,7 +33,6 @@ jobs:
     needs: test
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
-    environment: dev
 
     steps:
       - name: Checkout code
