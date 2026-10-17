@@ -14,6 +14,7 @@ def run_etl(input_file, output_file):
                 int(row["quantity"]) * float(row["price"])
             )
 
+    print("Hi")
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
